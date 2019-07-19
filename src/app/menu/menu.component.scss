@@ -1,0 +1,43 @@
+@import "../../scss/variables";
+
+:host {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  &__item {
+    color: $color-gray--darken;
+    font-family: $font-acc;
+    padding: 0 $gutter;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.88px;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &__item:after {
+    display: block;
+    content: "";
+    height: 2px;
+    margin: 3px auto 0;
+    width: 0;
+    background-color: $color-main-acc;
+    transition: width 0.3s ease-in-out;
+  }
+
+
+
+}
+
+.menu__item:hover:after,
+.menu__item:focus:after {
+  width: 70%;
+}
+
+.menu__item:active,
+.menu__item:focus {
+  color: $color-main-acc;
+}

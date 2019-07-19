@@ -1,4 +1,6 @@
 //@import "_fonts";
+@import "theme-for-all";
+
 
 //colors
 $color-light-gray: #f7f7f9;
@@ -14,3 +16,9 @@ $font-main: Lora;
 
 
 $gutter: 16px;
+
+//colors depend on the theme
+$color-main-acc: $theme-for-all;
+$color-main-acc--darken: $theme-for-all--darken;
+$bg-main-acc: $bg-for-all;
+$contrast-bg-main-acc: $contrast-bg-for-all;

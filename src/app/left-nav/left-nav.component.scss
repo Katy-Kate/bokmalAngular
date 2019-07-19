@@ -1,0 +1,84 @@
+@import "../../scss/variables";
+
+:host{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  background: $bg-main-acc;
+}
+
+.left-nav {
+  &__nav {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    height: 100vh;
+    width: auto;
+  }
+
+  &__wrap{
+    width: 100%;
+    height: 100%;
+    max-width: 580px;
+    background: $bg-main-acc;
+  }
+}
+
+.nav-block {
+  &__nav-item {
+    align-self: flex-start;
+    position: relative;
+    text-decoration: none;
+    font-family: $font-main;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    color: $contrast-bg-main-acc;
+    padding: 12px;
+  }
+
+  &__nav-item:after {
+    display: block;
+    content: "";
+    height: 2px;
+    top: 20px;
+    left: -32px;
+    position: absolute;
+    background-color: $contrast-bg-main-acc;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &__nav-item:hover {
+    position: relative;
+    transition: width 0.5s ease-in-out;
+    right: -12px;
+  }
+
+  &__nav-item:hover:after,
+  &__nav-item:focus:after {
+    width: 35px;
+  }
+}
+
+
+////open/close left-nav
+//[id="toogleLeftNav"]:checked ~ .main {
+//  .left-nav {
+//    left: 0;
+//    width: 100%;
+//
+//    &__nav {
+//      display: inline-flex;
+//    }
+//
+//  }
+//
+
+//}

@@ -15,6 +15,8 @@ import { ForAllComponent } from './for-all/for-all.component';
 import { IconComponent } from './icon/icon.component';
 import { HeaderNavigationComponent } from './header/header-navigation/header-navigation.component';
 import { HeaderBtnsComponent } from './header/header-btns/header-btns.component';
+import { MenuComponent } from './menu/menu.component';
+import { ToogleIconsComponent } from './left-nav/toogle-icons/toogle-icons.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { HeaderBtnsComponent } from './header/header-btns/header-btns.component'
     ForAllComponent,
     IconComponent,
     HeaderNavigationComponent,
-    HeaderBtnsComponent
+    HeaderBtnsComponent,
+    MenuComponent,
+    ToogleIconsComponent
   ],
   imports: [
     BrowserModule,

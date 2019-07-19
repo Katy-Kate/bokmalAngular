@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {MenuItem} from '../../classes/classes';
+import {menuListChangeTheme, menu} from '../../data/dataApp';
 
 @Component({
   selector: 'app-header-navigation',
@@ -8,8 +10,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HeaderNavigationComponent implements OnInit {
 
-  constructor() {
-  }
+  menuChangeTheme: MenuItem[] = menuListChangeTheme;
+  menu: MenuItem[] = menu;
 
   ngOnInit() {
   }

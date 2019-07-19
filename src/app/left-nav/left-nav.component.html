@@ -1,3 +1,10 @@
-<p>
-  left-nav works!
-</p>
+
+<div class="left-nav__wrap">
+<app-toogle-icons class="left-nav__toogle-icons" [toggleLeftMenu]="toggleLeftMenu" [isOpen]="isOpen"></app-toogle-icons>
+
+
+<div *ngIf="isOpen" class="left-nav__nav nav-block" >
+  <a *ngFor="let item of menu" routerLink="{{menu.path}}" class="nav-block__nav-item">{{item.name}}</a>
+</div>
+
+</div>

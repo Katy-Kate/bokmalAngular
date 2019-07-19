@@ -16,9 +16,3 @@
 }
 
 
-//open/close menu
-[id="toogleSideMenu"]:checked ~ .header {
-  .header__dropdown {
-    display: flex;
-  }
-}

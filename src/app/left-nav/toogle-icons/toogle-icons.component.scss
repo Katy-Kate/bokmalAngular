@@ -1,0 +1,28 @@
+@import "../../../scss/variables";
+
+:host {
+  position: absolute;
+  padding: 30px 15px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: $bg-main-acc;
+  border-right: 1px solid $color-light-gray--darken;
+}
+
+label {
+  width: 100%;
+  cursor: pointer;
+}
+
+.icon-btn {
+  cursor: pointer;
+  width: 24px;
+  height: 19px;
+}
+
+:host /deep/ svg {
+  width: 100%;
+  fill: $contrast-bg-main-acc!important;
+  stroke: transparent!important;
+}
