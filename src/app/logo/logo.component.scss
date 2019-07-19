@@ -1,0 +1,20 @@
+@import "../../scss/_variables";
+
+:host {
+  height: auto;
+  color: $color-gray--darken;
+  font-family: $font-acc;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.logo {
+  &__link {
+    text-decoration: none;
+  }
+}

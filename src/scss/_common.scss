@@ -1,0 +1,140 @@
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body > * {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.text-acc {
+  font-family: $font-main;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.text-heading {
+  font-family: $font-acc;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+
+  &--1 {
+    text-transform: uppercase;
+  }
+
+  &--2 {
+    font-family: $font-acc;
+    font-weight: 400;
+  }
+}
+
+.content {
+  padding: 50px 0px;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.block {
+  padding: 50px 115px;
+}
+
+.text-link {
+  font-family: $font-main;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: $font-acc;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  line-height: 42px;
+}
+
+h2 {
+  font-family: $font-acc;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: $font-acc;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#toogleLeftNav {
+  display: none;
+}
+
+#toogleSideMenu {
+  display: none;
+}
+
+.h2--light {
+  font-family: $font-acc;
+  font-weight: 400;
+  font-size: 42px;
+}
+
+.h3--light {
+  font-family: $font-acc;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  height: 29px;
+  width: auto;
+  min-width: 120px;
+  padding: 0 $gutter;
+  border-radius: 100px;
+  background-color: $color-main-acc;
+  color: $color-gray--darken;
+  font-family: $font-acc;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  line-height: 17px;
+}
+
+body {
+  padding: 0 20px;
+  background: $color-light-gray--darken;
+  display: block;
+}
+
+
+.main {
+  position: relative;
+  background: $color-white;
+  padding-left: 50px;
+}
+

@@ -1,0 +1,73 @@
+@import "../../scss/_variables";
+
+.icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke: $color-gray--darken;
+
+  &:active {
+    fill: $color-gray--darken;
+  }
+}
+
+.icon--acc {
+  stroke: $color-main-acc;
+
+  &:active {
+    fill: $color-main-acc;
+  }
+}
+
+.icon-watch {
+  height: 18px;
+  width: 23px;
+}
+
+.icon-calendar {
+  fill: $color-gray;
+  stroke: transparent;
+}
+
+.icon-eye {
+  fill: $color-gray;
+  stroke: transparent;
+}
+
+.icon-arrow-right2 {
+  fill: $color-gray--darken;
+
+}
+
+
+.icon-btn {
+  background-color: transparent;
+  box-sizing: content-box;
+}
+
+.icon-down {
+  height: 13px;
+  width: 21px;
+  display: inline-block;
+  margin-left: $gutter/2;
+  transform: rotate(180deg);
+}
+
+.search {
+  height: 20px;
+  width: 20px;
+  padding: 0 $gutter 0 0;
+}
+
+.bookmark {
+  padding: 0;
+  width: 22px;
+  height: 28px;
+}
+
+.icon-spinner11 {
+  width: 50px;
+  fill: #000;
+}

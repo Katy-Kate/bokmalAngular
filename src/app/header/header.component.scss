@@ -1,0 +1,24 @@
+@import "../../scss/_variables";
+
+:host {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $color-white;
+  height: 51px;
+  border: 1px solid $color-light-gray;
+  box-shadow: 0 1px 0 0 $color-light-gray;
+
+}
+:host /deep/> * {
+  padding: 10px $gutter;
+  border-right: 2px solid $color-light-gray;
+}
+
+
+//open/close menu
+[id="toogleSideMenu"]:checked ~ .header {
+  .header__dropdown {
+    display: flex;
+  }
+}

@@ -1,0 +1,30 @@
+//@import "common/_common";
+//@import "common/_icons";
+//@import "common/_header";
+//@import "common/_banner";
+//@import "common/footer";
+//@import "common/_logo";
+//@import "common/_menu";
+//@import "common/_dropdown-menu";
+//@import "common/_left-nav";
+//@import "common/_announce";
+//@import "common/_article-date";
+//@import "common/_sort";
+//@import "common/_preview";
+//@import "common/_grid-preview";
+//@import "common/_preview-banner";
+//@import "common/_load-more";
+//@import "common/_subscribe";
+//@import "common/_socials";
+
+.block--bg-gray {
+  background: $color-light-gray;
+  margin-bottom: 50px;
+}
+
+.block--bg-gray__title {
+  text-transform: uppercase;
+  counter-reset: $color-light-gray;
+
+}
+

@@ -1,0 +1,54 @@
+//ProximaNova
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../../fonts/proxima-nova/ProximaNova-Regular.ttf") format("truetype"),
+  url("../../fonts/proxima-nova/ProximaNova-Regular.eot") format("eot"),
+  url("../../fonts/proxima-nova/ProximaNova-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../../fonts/proxima-nova/ProximaNova-Bold.ttf") format("truetype"),
+  url("../../fonts/proxima-nova/ProximaNova-Bold.eot") format("eot"),
+  url("../../fonts/proxima-nova/ProximaNova-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../../fonts/proxima-nova/ProximaNova-Semibold.ttf") format("truetype"),
+  url("../../fonts/proxima-nova/ProximaNova-Semibold.eot") format("eot"),
+  url("../../fonts/proxima-nova/ProximaNova-Semibold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+//Lora
+@font-face {
+  font-family: "Lora";
+  src: url("../../fonts/lora/LoraRegular.ttf") format("truetype"),
+  url("../../fonts/lora/LoraRegular.eot") format("eot"),
+  url("../../fonts/lora/LoraRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("../../fonts/lora/LoraBold.ttf") format("truetype"),
+  url("../../fonts/lora/LoraBold.eot") format("eot"),
+  url("../../fonts/lora/LoraBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("../../fonts/lora/LoraBoldItalic.ttf") format("truetype"),
+  url("../../fonts/lora/LoraBoldItalic.eot") format("eot"),
+  url("../../fonts/lora/LoraBoldItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 800;
+}

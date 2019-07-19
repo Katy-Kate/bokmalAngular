@@ -3,10 +3,34 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LeftNavComponent } from './left-nav/left-nav.component';
+import { BannerComponent } from './banner/banner.component';
+import { ContentComponent } from './content/content.component';
+import { HeaderComponent } from './header/header.component';
+import { LogoComponent } from './logo/logo.component';
+import { DropdownMenuComponent } from './dropdown-menu/dropdown-menu.component';
+import { FooterComponent } from './footer/footer.component';
+import { BabySideComponent } from './baby-side/baby-side.component';
+import { ForAllComponent } from './for-all/for-all.component';
+import { IconComponent } from './icon/icon.component';
+import { HeaderNavigationComponent } from './header/header-navigation/header-navigation.component';
+import { HeaderBtnsComponent } from './header/header-btns/header-btns.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LeftNavComponent,
+    BannerComponent,
+    ContentComponent,
+    HeaderComponent,
+    LogoComponent,
+    DropdownMenuComponent,
+    FooterComponent,
+    BabySideComponent,
+    ForAllComponent,
+    IconComponent,
+    HeaderNavigationComponent,
+    HeaderBtnsComponent
   ],
   imports: [
     BrowserModule,
