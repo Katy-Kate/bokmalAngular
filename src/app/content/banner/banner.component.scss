@@ -1,4 +1,4 @@
-@import "../../scss/_variables";
+@import "../../../scss/variables";
 
 
 :host{
@@ -16,4 +16,28 @@
 .banner__article-date p {
   fill: $color-white;
   color: $color-white;
+}
+
+
+
+.announce {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 50%;
+
+  &__title {
+    color: $color-white;
+  }
+
+  &__section {
+    color: $color-main-acc;
+    text-transform: uppercase;
+  }
+
+
+}
+
+.announce > * {
+  padding: $gutter 0;
 }

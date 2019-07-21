@@ -1,0 +1,23 @@
+@import "../../../../scss/variables";
+
+.article-date {
+  display: flex;
+  flex-direction: row;
+
+
+  &__date-icon {
+    display: flex;
+    height: 18px;
+    width: 20px;
+
+  }
+
+  &__icon-watch {
+    display: flex;
+  }
+
+  &__icon-desc {
+    padding: 0 $gutter 0 $gutter/2;
+    line-height: 17px;
+  }
+}

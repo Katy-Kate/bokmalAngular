@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {data, dataArticles} from '../data/dataApp';
+import {ArticleData} from '../classes/classes';
 
 @Component({
   selector: 'app-baby-side',
@@ -7,9 +9,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BabySideComponent implements OnInit {
 
-  constructor() { }
+  articles: ArticleData[];
+
+
+  bannerData = data;
+  articlesData = dataArticles;
+
+  getArticles = () => {
+    return;
+  }
+
+  setArticles = (articles) => {
+    this.articles = articles;
+  }
+
+  sortByDate = () => {
+    return;
+  }
+
+  sortByPopularity = () => {
+    return;
+  };
 
   ngOnInit() {
   }
+
 
 }

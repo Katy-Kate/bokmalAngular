@@ -1,0 +1,18 @@
+@import "../../scss/variables";
+
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__item {
+    padding: 20px;
+    width: 30%;
+  }
+
+}
+
+.copyright {
+  color: $color-gray;
+}

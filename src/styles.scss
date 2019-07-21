@@ -2,3 +2,90 @@
 @import "./scss/_reset-css";
 @import "./scss/_variables";
 @import "./scss/_common";
+
+
+.block--bg-gray {
+  background: $color-light-gray;
+  margin-bottom: 50px;
+}
+
+.block--bg-gray__title {
+  text-transform: uppercase;
+  counter-reset: $color-light-gray;
+
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  body {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  .header {
+    justify-content: flex-end;
+    margin-left: 53px;
+    background: $bg-main-acc;
+  }
+  .header > div {
+    border: none;
+  }
+  .header__center {
+    position: absolute;
+    top: 40px;
+    z-index: 33333;
+    background: $bg-main-acc;
+    right: -1px;
+    left: -54px;
+
+    justify-content: center;
+  }
+  .header__center > label {
+    display: none;
+  }
+  .header__bookmark {
+    display: none;
+  }
+  .logo {
+    flex-grow: 1;
+    color: $contrast-bg-main-acc;
+  }
+  .nav-icons {
+    top: -64px;
+    height: 64px;
+    border: none;
+  }
+  .banner {
+    position: relative;
+  }
+  .banner .announce__title {
+    font-size: 24px;
+  }
+  .banner .announce__section {
+    font-size: 14px;
+  }
+  .announce__content > * {
+    padding: 5px 0;
+  }
+  .announce__content {
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    padding: 0 20px;
+    left: 0;
+  }
+  .container > div {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+<div class="preview block preview--picture-right clearfix">
+  <p class="preview__section ">{{article.section}}</p>
+  <div class="preview__picture"><img alt="" src="{{article.picture}}"/></div>
+  <div class="preview__content--wrap ">
+    <div class="preview__content">
+      <app-article-inf class="preview__date" [publickDate]="article.publickDate" [watches]="article.watches"></app-article-inf>
+      <h1 class="preview__title">{{article.title}}</h1>
+      <div class="preview__btns-wrap">
+        <button class="preview__btn btn">Читати</button>
+        <button class="preview__bookmark icon-btn bookmark">
+          <app-icon-bookmark></app-icon-bookmark>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

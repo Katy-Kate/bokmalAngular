@@ -1,0 +1,64 @@
+@import "../../../../scss/_variables";
+
+.grid-preview {
+  &__item {
+    margin: 25px;
+    min-width: 300px;
+    max-width: 320px;
+    flex: 1;;
+  }
+
+  &__picture {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 17vw;
+    min-height: 250px;
+    overflow: hidden;
+  }
+
+  &__picture img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  &__bookmark {
+    position: absolute;
+    right: 10px;
+    top: -15px;
+    & /deep/ svg{
+     stroke:  $color-main-acc;
+    }
+
+  }
+}
+
+
+.item-preview {
+  &__content {
+    margin: 25px;
+  }
+
+  &__title {
+    color: $color-gray--darken;
+    font-family: $font-acc;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__section {
+    text-transform: uppercase;
+    color: $color-main-acc;
+    padding: 15px 0;
+  }
+
+  &__article-date {
+    position: relative;
+    padding: 20px 0;
+  }
+}

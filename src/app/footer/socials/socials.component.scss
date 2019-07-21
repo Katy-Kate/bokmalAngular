@@ -1,0 +1,19 @@
+@import "../../../scss/variables";
+
+.socials {
+  display: flex;
+
+  &__item {
+    margin: 10px 15px;
+    width: 26px;
+    height: 29px;
+    box-sizing: content-box;
+  }
+
+  /deep/.icon {
+    fill: $color-gray--darken;
+  }
+
+}
+
+

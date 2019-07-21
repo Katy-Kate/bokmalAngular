@@ -8,8 +8,8 @@
   <defs>
     <symbol [attr.id]="'icon-'+ id"  viewBox="0 0 32 32">
       <title>search</title>
-      <path
-        [attr.d]="d"></path>
+      <path *ngFor="let item of d"
+        [attr.d]="item"></path>
     </symbol>
   </defs>
 </svg>

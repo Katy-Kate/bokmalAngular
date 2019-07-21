@@ -1,0 +1,16 @@
+<div class="grid-preview__item item-preview">
+
+  <p class="item-preview__section">{{article.section}}</p>
+
+  <div class="grid-preview__picture"><img alt="" src="{{article.picture}}"/></div>
+
+  <div class="item-preview__article-date article-date">
+    <button class="grid-preview__bookmark announce__bookmark  icon-btn bookmark">
+      <app-icon-bookmark></app-icon-bookmark>
+    </button>
+    <app-article-inf [publickDate]="article.publickDate" [watches]="article.watches"></app-article-inf>
+  </div>
+
+  <h3 class="item-preview__title announce__title">{{article.title}}</h3>
+
+</div>

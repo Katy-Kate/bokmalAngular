@@ -1,7 +1,6 @@
 import {Component, OnInit, Input} from '@angular/core';
 
 
-
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
@@ -12,8 +11,11 @@ export class BannerComponent implements OnInit {
 
   constructor() {
   }
-@Input() data;
+
+  @Input() data;
+
   ngOnInit() {
+    console.log('data', this.data);
   }
 
 }
