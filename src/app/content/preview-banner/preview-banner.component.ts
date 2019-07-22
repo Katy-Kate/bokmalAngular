@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {dataArticles} from '../../data/dataApp';
+import {Component, OnInit, Input} from '@angular/core';
+import {ArticleData} from '../../classes/classes';
 
 @Component({
   selector: 'app-preview-banner',
@@ -8,7 +8,7 @@ import {dataArticles} from '../../data/dataApp';
 })
 export class PreviewBannerComponent implements OnInit {
 
-  article = dataArticles[1];
+  @Input() article: ArticleData;
 
   ngOnInit() {
   }

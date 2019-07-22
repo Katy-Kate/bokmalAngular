@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {dataArticles} from '../../data/dataApp';
+import {Component, OnInit, Input} from '@angular/core';
+import {ArticleData} from '../../classes/classes';
 
 @Component({
   selector: 'app-grid-preview',
@@ -8,7 +8,7 @@ import {dataArticles} from '../../data/dataApp';
 })
 export class GridPreviewComponent implements OnInit {
 
-  data = [dataArticles[1], dataArticles[2], dataArticles[3]];
+  @Input() articles: ArticleData;
 
   ngOnInit() {
   }

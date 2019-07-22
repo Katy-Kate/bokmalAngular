@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {dataArticles} from '../../data/dataApp';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-preview-picture-right',
@@ -8,7 +7,7 @@ import {dataArticles} from '../../data/dataApp';
 })
 export class PreviewPictureRightComponent implements OnInit {
 
-  article = dataArticles[1];
+  @Input() article;
 
   ngOnInit() {
   }

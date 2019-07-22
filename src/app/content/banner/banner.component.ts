@@ -15,7 +15,6 @@ export class BannerComponent implements OnInit {
   @Input() data;
 
   ngOnInit() {
-    console.log('data', this.data);
   }
 
 }

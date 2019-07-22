@@ -1,17 +1,19 @@
-<app-banner [data]="bannerData"></app-banner>
-<div class="content">
-  <app-sort-block></app-sort-block>
-  <app-preview></app-preview>
-  <div class="block">
-    <app-grid-preview></app-grid-preview>
-  </div>
-  <app-preview-banner ></app-preview-banner>
-  <div class="block block--bg-gray">
-    <app-grid-preview></app-grid-preview>
-  </div>
-<app-preview-picture-right></app-preview-picture-right>
-  <div class="block">
-    <app-grid-preview ></app-grid-preview>
+<app-banner *ngIf="bannerData" [data]="bannerData"></app-banner>
+<div *ngIf="articles" class="content">
+  <div *ngFor="let article of articles">
+    <app-sort-block></app-sort-block>
+    <app-preview [article]="article[0]"></app-preview>
+    <div class="block">
+      <app-grid-preview [articles]="[article[1],article[2],article[3]]"></app-grid-preview>
+    </div>
+    <app-preview-banner [article]="article[4]"></app-preview-banner>
+    <div class="block block--bg-gray">
+      <app-grid-preview [articles]="[article[5],article[6],article[7]]"></app-grid-preview>
+    </div>
+    <app-preview-picture-right [article]="article[8]"></app-preview-picture-right>
+      <div class="block">
+  <app-grid-preview [articles]="[article[9],article[10],article[11]]"></app-grid-preview>
+       </div>
   </div>
   <app-load-more></app-load-more>
 </div>

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {data, dataArticles} from '../data/dataApp';
 import {ArticleData} from '../classes/classes';
+import {ArticlesService} from '../articles.service';
 
 @Component({
   selector: 'app-baby-side',
@@ -8,31 +8,35 @@ import {ArticleData} from '../classes/classes';
   styleUrls: ['./baby-side.component.scss']
 })
 export class BabySideComponent implements OnInit {
-
-  articles: ArticleData[];
-
-
-  bannerData = data;
-  articlesData = dataArticles;
-
-  getArticles = () => {
-    return;
+  constructor(private articleService: ArticlesService) {
   }
 
-  setArticles = (articles) => {
-    this.articles = articles;
+  articles = [];
+  bannerData = this.articles ? this.articles[0] : null;
+
+  getArticles(): void {
+    this.articleService.getArticles()
+      .subscribe(articles => this.articles.push(articles));
   }
 
-  sortByDate = () => {
-    return;
+  getBannerData(): void {
+    this.articleService.getBannerData()
+      .subscribe(bannerData => this.bannerData = bannerData);
   }
-
-  sortByPopularity = () => {
-    return;
-  };
 
   ngOnInit() {
+    this.getBannerData();
+    this.getArticles();
   }
 
+
+  // sortByDate = () => {
+  //   return;
+  // };
+  //
+  // sortByPopularity = () => {
+  //   return;
+  // };return
+  //
 
 }

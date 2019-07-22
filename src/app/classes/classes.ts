@@ -4,6 +4,12 @@ export class MenuItem {
 }
 
 export class ArticleData {
-  name: string;
-  path: string;
+  id: number;
+  section: string;
+  title: string;
+  picture: string;
+  addedToFavorite: boolean;
+  watches: string;
+  publickDate: string;
 }
+
