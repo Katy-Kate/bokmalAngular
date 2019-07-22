@@ -8,9 +8,9 @@
   &__content--wrap {
     position: absolute;
     display: inline-block;
-    max-width: 670px;
+    max-width: 57%;
     width: 100%;
-    right: 0;
+    right: 60px;
     top: 105px;
     max-height: 270px;
     height: 100%;
@@ -24,12 +24,12 @@
 
   &__content::before {
     content: "";
-    width: 590px;
+    width: 100%;
     height: 100%;
     border: 1px solid $color-light-gray--darken;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 50px;
     background: $color-white;
   }
 
