@@ -27,10 +27,7 @@ export const leftMenu = [
 export const OPTIONS_DATA_FORMAT = {
   year: 'numeric',
   month: 'long',
-  day: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-  second: 'numeric'
+  day: 'numeric'
 };
 
 
@@ -44,8 +41,8 @@ export const DATA_BANNER = {
   picture: 'https://cn.opendesktop.org/img/2/6/8/e/5a86b7241d412a0aef4085d49757d5a7488b.jpg'
 };
 
-export const GET_DATA = (numberData): string => {
-  return new Date(Number(numberData)).toLocaleDateString('en-US',  OPTIONS_DATA_FORMAT);
+export const GET_DATE = (numberData): string => {
+  return new Date(Number(numberData)).toLocaleDateString('en-US', OPTIONS_DATA_FORMAT);
 
 };
 

@@ -1,5 +1,5 @@
 import {Component, OnInit, Input} from '@angular/core';
-import {GET_DATA} from '../../data/dataApp';
+import {GET_DATE} from '../../data/dataApp';
 
 
 @Component({
@@ -14,9 +14,10 @@ export class BannerComponent implements OnInit {
   }
 
   @Input() data;
-
+  publickDate;
 
   ngOnInit() {
+    this.publickDate = GET_DATE(this.data.publickDate);
   }
 
 }

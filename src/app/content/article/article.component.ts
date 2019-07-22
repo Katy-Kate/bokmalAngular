@@ -1,4 +1,5 @@
 import {Component, OnInit, Input} from '@angular/core';
+import {GET_DATE} from '../../data/dataApp';
 
 
 @Component({
@@ -12,8 +13,10 @@ export class ArticleComponent implements OnInit {
   }
 
   @Input() data;
+  publickDate;
 
   ngOnInit() {
+    this.publickDate = GET_DATE(this.data.publickDate);
   }
 
 }
