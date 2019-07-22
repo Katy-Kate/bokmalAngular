@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ArticleData} from '../classes/classes';
 import {ArticlesService} from '../articles.service';
+import { OPTIONS_DATA_FORMAT} from '../data/dataApp';
 
 @Component({
   selector: 'app-baby-side',
@@ -30,13 +31,17 @@ export class BabySideComponent implements OnInit {
   }
 
 
-  // sortByDate = () => {
-  //   return;
-  // };
-  //
-  // sortByPopularity = () => {
-  //   return;
-  // };return
-  //
+  sortByDate = () => {
+    this.articles.sort((a, b) => {
+      return a.publickDate - b.publickDate;
+    });
+  }
+
+  sortByPopularity = () => {
+    return;
+  }
+
+
+
 
 }

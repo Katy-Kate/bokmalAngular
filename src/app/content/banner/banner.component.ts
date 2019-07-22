@@ -1,4 +1,5 @@
 import {Component, OnInit, Input} from '@angular/core';
+import {GET_DATA} from '../../data/dataApp';
 
 
 @Component({
@@ -13,6 +14,7 @@ export class BannerComponent implements OnInit {
   }
 
   @Input() data;
+
 
   ngOnInit() {
   }

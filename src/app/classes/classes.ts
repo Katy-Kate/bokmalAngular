@@ -10,6 +10,6 @@ export class ArticleData {
   picture: string;
   addedToFavorite: boolean;
   watches: string;
-  publickDate: string;
+  publickDate: number;
 }
 

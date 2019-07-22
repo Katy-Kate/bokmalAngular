@@ -1,7 +1,7 @@
 <app-banner *ngIf="bannerData" [data]="bannerData"></app-banner>
 <div *ngIf="articles" class="content">
-  <div *ngFor="let article of articles">
     <app-sort-block></app-sort-block>
+  <div *ngFor="let article of articles">
     <app-preview [article]="article[0]"></app-preview>
     <div class="block">
       <app-grid-preview [articles]="[article[1],article[2],article[3]]"></app-grid-preview>
