@@ -10,14 +10,15 @@ const baseURL: string = "http://localhost:8000/";
   providedIn: "root"
 })
 export class ArticlesService {
-  constructor(private _http: HttpClient) {}
+  constructor(private _http: HttpClient) { }
   default_headers = new HttpHeaders({
-    "Content-Type": "aplication/json"
+    "Content-Type": "text/html"
   });
 
   getArticles(url: string, params?: object): Observable<any> {
+    console.log("params: ", params);
     return this._http.get(baseURL + url, {
-      ...params,
+      params: { ...params },
       headers: this.default_headers
     });
   }

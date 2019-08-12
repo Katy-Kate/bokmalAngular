@@ -4,7 +4,7 @@ const articles_baby_side = require("./articles.json");
 const articles_for_all = require("./articles.json");
 const OFFSET = 12;
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", req.headers.origin);
   res.header(
     "Access-Control-Allow-Headers",
@@ -16,31 +16,51 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get("/articles/:articlesTypeParams", function(req, res) {
+app.get("/articles/:articlesTypeParams", function (req, res) {
   let pageNumber = req.query.page || 1;
-  console.log("------------pageNumber", pageNumber);
+  let filterType = req.query.filter || null;
   let typeOfArticles = req.params.articlesTypeParams;
-  console.log("------------pageNumber", typeOfArticles);
+  let articles = getArticlesByParams(typeOfArticles, filterType, pageNumber)
+  res.send(articles);
+});
+
+function getArticlesByParams(typeOfArticles, filterType, pageNumber) {
+
   let sending_articles;
   if (typeOfArticles == "baby-side") sending_articles = articles_baby_side;
   else if (typeOfArticles == "for-all") sending_articles = articles_for_all;
 
-  let filteredArticlesByPage = getArticlesByPage(sending_articles, pageNumber);
-  res.send(filteredArticlesByPage);
-});
+  if (filterType) {
+    filterArticles(sending_articles, filterType);
+  }
 
-app.listen(8000, () => {
-  console.log("Server started!");
-});
+  return getArticlesByPage(sending_articles, pageNumber);
+
+}
 
 function getArticlesByPage(articles, pageNumber) {
   let finishCount = pageNumber === 1 ? OFFSET : OFFSET * pageNumber;
   let startCount = pageNumber === 1 ? 0 : finishCount - OFFSET + 1;
 
-  console.log("startCount", startCount);
-  console.log("finishCount", finishCount);
-
   return articles.filter((item, i) => {
     return i >= startCount && i <= finishCount;
   });
 }
+
+function filterArticles(arrOfArricles, filterType) {
+  if (filterType === "filterByDate") {
+    return arrOfArricles.sort((a, b) => {
+      return a.publickDate - b.publickDate;
+    });
+  }
+  else if (filterType === "filterByPopular") {
+    return arrOfArricles.sort((a, b) => {
+      return a.watches - b.watches;
+    });
+  }
+}
+
+
+app.listen(8000, () => {
+  console.log("Server started!");
+});

@@ -13,3 +13,7 @@ export class ArticleData {
   publickDate: number;
 }
 
+export class HttpParams {
+  "page": number;
+  "filter": string;
+}
