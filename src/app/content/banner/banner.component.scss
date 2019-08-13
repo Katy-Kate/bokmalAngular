@@ -1,13 +1,14 @@
 @import "../../../scss/variables";
 
 
-:host{
+.banner{
   display: flex;
   align-items: center;
   justify-content: flex-start;
   height: 450px;
-  background: url(https://cn.opendesktop.org/img/2/6/8/e/5a86b7241d412a0aef4085d49757d5a7488b.jpg) no-repeat center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 100px;
 }
 

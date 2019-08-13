@@ -1,6 +1,8 @@
-<div *ngIf="data" class="banner__content announce">
-  <p class="text-heading--1 announce__section">{{data.section}}</p>
-  <h1 class="announce__title"> {{data.title}}</h1>
- <app-article-inf [watches]="data.watches" [publickDate]="publickDate"></app-article-inf>
-  <app-article-btn></app-article-btn>
+<div *ngIf="data" class="banner" [ngStyle]="{'background-image': 'url('+data.picture+')'}">
+  <div class="banner__content announce" [ngStyle]="{'background': data.picture}">
+    <p class="text-heading--1 announce__section">{{data.section}}</p>
+    <h1 class="announce__title"> {{data.title}}</h1>
+    <app-article-inf [watches]="data.watches" [publickDate]="publickDate"></app-article-inf>
+    <app-article-btn></app-article-btn>
+  </div>
 </div>

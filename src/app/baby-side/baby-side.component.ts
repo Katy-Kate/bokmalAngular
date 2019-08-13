@@ -10,7 +10,7 @@ export class BabySideComponent implements OnInit {
   constructor(private articleService: ArticlesService) { }
 
   articles = [];
-  bannerData = this.articles ? this.articles[0] : null;
+  bannerData: object;
 
   getArticles(url: string, params: object): void {
     this.articleService.getArticles(url, params).subscribe(articles => {
@@ -21,7 +21,7 @@ export class BabySideComponent implements OnInit {
 
   getBannerData(): void {
     this.articleService
-      .getBannerData()
+      .getBanner("banner/baby-side")
       .subscribe(bannerData => (this.bannerData = bannerData));
   }
 

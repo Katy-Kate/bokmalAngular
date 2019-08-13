@@ -1,12 +1,11 @@
-import {Component, OnInit, Input} from '@angular/core';
-import {GET_DATE} from '../../data/dataApp';
+import { Component, OnInit, Input } from '@angular/core';
+import { GET_DATE } from '../../data/dataApp';
 
 
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.scss'],
-  host: {'class': 'banner'}
+  styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
 

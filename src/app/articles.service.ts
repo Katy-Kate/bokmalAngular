@@ -16,15 +16,17 @@ export class ArticlesService {
   });
 
   getArticles(url: string, params?: object): Observable<any> {
-    console.log("params: ", params);
     return this._http.get(baseURL + url, {
       params: { ...params },
       headers: this.default_headers
     });
   }
 
-  getBannerData(): Observable<ArticleData> {
-    console.log("getBannerData in service");
-    return of(DATA_BANNER);
+  getBanner(url: string, params?: object): Observable<any> {
+    return this._http.get(baseURL + url, {
+      params: { ...params },
+      headers: this.default_headers
+    })
+
   }
 }
